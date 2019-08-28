@@ -1,10 +1,7 @@
 import React from 'react';
 import { BrowserRouter as Router, Switch, NavLink, Route } from "react-router-dom";
 
-import HomeView from './views/HomeView';
-import SobreMiView from './views/SobreMiView';
-import ContactoView from './views/ContactoView';
-import NotFoundView from './views/NotFoundView';
+import VistaUnica from './views/VistaUnica';
 
 import './App.scss';
 import footer_logo from './assets/9S_footer.png';
@@ -27,14 +24,15 @@ function App() {
             {/* <NavLink exact={true} activeClassName='is-active' className="link" to="/">Teor&iacute;a de las Inteligencias M&uacute;ltiples</NavLink> */}
             <NavLink exact={true} activeClassName='is-active' className="link" to="/tratamientos">Tratamientos</NavLink>
             <NavLink exact={true} activeClassName='is-active' className="link" to="/contacto">Contacto</NavLink>
-            <NavLink exact={true} activeClassName='is-active' className="link" to="/blog">Blog</NavLink>
+            {/* <NavLink exact={true} activeClassName='is-active' className="link" to="/blog">Blog</NavLink> */}
           </nav>
           <section id="App-Views">
             <Switch>
-              <Route exact path={`${basePath}/`} component={HomeView} />
-              <Route exact path={`${basePath}/sobremi`} component={SobreMiView} />
-              <Route exact path={`${basePath}/contacto`} component={ContactoView} />
-              <Route component={NotFoundView} />
+              <Route exact path={`${basePath}/`} component={VistaUnica} />
+              <Route exact path={`${basePath}/sobremi`} component={VistaUnica} />
+              <Route exact path={`${basePath}/tratamientos`} component={VistaUnica} />
+              <Route exact path={`${basePath}/contacto`} component={VistaUnica} />
+              {/* <Route exact path={`${basePath}/blog`} component={VistaUnica} /> */}
             </Switch>
           </section>
         </Router>

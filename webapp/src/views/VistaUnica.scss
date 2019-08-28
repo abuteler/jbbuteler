@@ -1,0 +1,70 @@
+.ViewContainer {
+  min-height: 650px;
+  &#VistaHome {
+    padding-top: 36px;
+    img {
+      width: 322px;
+    }
+  }
+  &#VistaSobreMi {
+    img {
+      margin: 27px auto;
+      height: 180px;
+    }
+    p {
+      margin: 0 auto;
+      padding: 0 36px 60px 36px;
+      font-family: 'ciclefina';
+      font-size: 18px;
+      text-align: justify;
+      line-height: 1.2;
+      &:first-of-type {
+        padding: 0 36px;
+      }
+    }
+  }
+  &#VistaTratamientos {
+    p, ul {
+      line-height: 1.2;
+      margin: 0 auto;
+      padding: 18px 36px 0 36px;
+      font-family: 'ciclefina';
+      font-size: 18px;
+      color: rgb(65, 64, 66);
+    }
+    p {
+      text-align: justify;
+      &:last-child {
+        padding-bottom: 54px;
+      }
+    }
+    ul {
+      text-align: left;
+      padding-left: 72px;
+      li {
+        list-style-type: none;
+        display: inline-block;
+        width: 270px;
+        text-align: left;
+      }
+    }
+  }
+  &#VistaContacto {
+    p {
+      margin: 0 auto;
+      font-family: 'ciclefina';
+      font-size: 24px;
+      text-align: center;
+      line-height: 3;
+      color: rgb(65, 64, 66);
+      &:first-of-type {
+        margin-top: 54px;
+      }
+      a {
+        color: rgb(65, 64, 66);
+        text-decoration: none;
+      }
+    }
+  }
+}
+
