@@ -46,10 +46,14 @@ class VistaUnica extends React.Component {
             Licenciado en Psicología Juan Bautista Buteler<br />
             M.N. 47.500 M.P. 95.701
           </p>
+          <p><ul>
+            <li>Fui Coordinador de la Comunidad Terapéutica para el tratamiento del abuso y adicción a las drogas Hogar San Ignacio de Julio 2011 a Febrero 2017.</li>
+            <li>Doy Talleres de Prevención de Adicciones.</li>
+            <li>Desde el año 2010 doy Talleres de Estimulación de la Memoria para la Tercera Edad de manera Grupal.</li>
+            <li>Doy sesiones de Rehabilitación cognitiva de manera individual.</li>
+            <li>Trabajo en consultorio privado con adultos ayudándolos con sus problemas de pareja en algunos casos, en otros en los vínculos con los hijos, ataques de pánico, duelos, problemas laborales, uso y abuso de drogas, alcohol, etc.</li>
+          </ul></p>
           <br />
-          <p>
-              Me recibí de Licenciado en Psicología en el año 2009. Trabajo en consultorio privado desde esa época. Trabajé con niños, adolescentes y adultos. Hoy sólo trabajo con adultos. Fui Coordinador de la Comunidad Terapéutica para el tratamiento del abuso y adicción a las drogas Hogar San Ignacio de Julio 2011 a Febrero 2017. Doy Talleres de Prevención de Adicciones. Soy Consejero Titular en el Distrito XV del Colegio de Psicólogos de la Provincia de Buenos Aires desde diciembre del 2013 hasta el presente. Desde el año 2010 doy Talleres de Estimulación de la Memoria para la Tercera Edad. Soy marido y padre de cuatro hijos, los que me hacen sentir más orgullo que mi actual profesión, incluida la anterior, ya que fui Marino. También entre otros trabajos que tuve, fui empleado de comercio, empezando como vendedor, llegando al cargo de Gerente de Comercialización y apoderado de la Empresa. Todas éstas actividades y experiencias me permiten, junto con los conocimientos adquiridos en la Universidad, que desde entonces sigo incrementando, dar los Talleres y ayudar a mis pacientes en mi consultorio.
-          </p>
         </div>
         <div className="ViewContainer" id="VistaTratamientos" ref="tratamientos">
           <TituloSeccion titulo="Tratamimentos" />
@@ -85,8 +89,17 @@ class VistaUnica extends React.Component {
         </div>
         <div className="ViewContainer" id="VistaContacto" ref="contacto">
           <TituloSeccion titulo="Contacto" />
-          <p>Celular: +54 9 11 5003 7697</p>
-          <p>E-Mail: <a href="mailto:jbbuteler@hotmail.com">jbbuteler@hotmail.com</a></p>
+          <div className="ColContainer">
+            <div className="LeftCol">
+              <p>Celular: +54 9 11 5003 7697</p>
+              <p>E-Mail: <a href="mailto:jbbuteler@hotmail.com">jbbuteler@hotmail.com</a></p>
+              <p>LinkedIn: <a href="https://www.linkedin.com/in/juanbautistabuteler/">/in/juanbautistabuteler/</a></p>
+              <p>Consultorio en Mart&iacute;nez.</p>
+            </div>
+            <div className="RightCol">
+              <iframe title="Mapa en Google" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3288.765841748239!2d-58.50446358477363!3d-34.48346398049088!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb16bbf78b045%3A0xf0ef500df50478cf!2sLic.%20Juan%20Bautista%20Buteler%20-%20Psic%C3%B3logo!5e0!3m2!1sen!2sar!4v1573828990572!5m2!1sen!2sar" width="330" height="290" frameBorder="0" allowFullScreen=""></iframe>
+            </div>
+          </div>
         </div>
       </div>
     );
