@@ -1,6 +1,14 @@
 import "./Ensayo.scss";
 
-export default function Ensayo({ ensayo }) {
+interface EnsayoProps {
+  ensayo: {
+    titulo: string;
+    texto: string;
+    fecha: string;
+  }
+}
+
+export default function Ensayo({ ensayo }: EnsayoProps) {
   const { titulo, texto, fecha } = ensayo;
   return (
     <div className="ensayo">

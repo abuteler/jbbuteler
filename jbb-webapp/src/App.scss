@@ -27,6 +27,9 @@ body {
   font-size: 17px;
   position: relative;
   min-height: calc(100vh - 180px);
+  #root {
+    width: 100%;
+  }
   .App {
     text-align: center;
     .JBB-Container {
@@ -80,15 +83,14 @@ body {
           font-family: "ciclefina";
           color: gray;
           white-space: nowrap;
-          &.is-active {
+          &.active {
             font-family: "ciclegordita";
             color: darken($color: gray, $amount: 18);
           }
         }
       }
       #App-Views {
-        margin: 0 auto;
-        margin-top: 249px;
+        margin: 249px auto 0;
         background: white;
       }
     }
