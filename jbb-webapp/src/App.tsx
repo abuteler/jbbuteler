@@ -1,6 +1,6 @@
 import { useEffect } from 'react';
-import ReactGA from 'react-ga';
 import { Routes, Route, useLocation, NavLink } from 'react-router-dom';
+import ReactGA from 'react-ga';
 
 import VistaUnica from './views/VistaUnica'
 import './App.scss';
@@ -11,6 +11,7 @@ function App() {
   //Google Analytics
   ReactGA.initialize('AW-1005728213', { debug: true });
   const { pathname } = useLocation();
+
   useEffect(()=>{
     ReactGA.pageview(pathname);
   }, [pathname])
