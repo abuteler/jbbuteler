@@ -1,6 +1,6 @@
 import { useEffect } from 'react';
 import { Routes, Route, useLocation, NavLink } from 'react-router-dom';
-import ReactGA from 'react-ga';
+import ReactGA from 'react-ga4';
 
 import VistaUnica from './views/VistaUnica'
 import './App.scss';
@@ -9,11 +9,14 @@ import footer_logo from './assets/9S_footer.png';
 
 function App() {
   //Google Analytics
-  ReactGA.initialize('AW-1005728213', { debug: true });
+  ReactGA.initialize([{
+    trackingId: 'AW-1005728213',
+    // gaOptions: { testMode: true }
+  }]);
   const { pathname } = useLocation();
 
   useEffect(()=>{
-    ReactGA.pageview(pathname);
+    ReactGA.send({ hitType: "pageview", page: pathname });
   }, [pathname])
 
   const links = [

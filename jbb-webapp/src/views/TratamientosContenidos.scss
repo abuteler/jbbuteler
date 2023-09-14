@@ -1,0 +1,39 @@
+#ContainerTratamientos {
+  .TipoTratamiento {
+    padding-bottom: 200px;
+    width: 640px;
+    margin: auto;
+    h3 {
+      display: none;
+    }
+    p {
+      line-height: 1.2;
+      margin: 0 auto;
+      padding: 24px 0;
+      font-family: "ciclefina";
+      font-size: 18px;
+      color: rgb(65, 64, 66);
+    }
+    p {
+      text-align: justify;
+      &:last-child {
+        padding-bottom: 54px;
+      }
+    }
+  }
+  @media (max-width: 640px) {
+    .TipoTratamiento {
+      width: auto;
+      padding-bottom: 100px;
+      h3 {
+        display: block;
+      }
+      img {
+        display: none;
+      }
+      p {
+        padding: 0 20px;
+      }
+    }
+  }
+}

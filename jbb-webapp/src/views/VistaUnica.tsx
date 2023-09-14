@@ -6,6 +6,8 @@ import './VistaUnica.scss';
 import colored_head from '../assets/head-in-colors.jpg';
 import bachi from '../assets/nuevo-retrato-bachi.png';
 
+import TratamientosContenidos from './TratamientosContenidos';
+
 export default function VistaUnica() {
   const { pathname } = useLocation();
 
@@ -57,60 +59,12 @@ export default function VistaUnica() {
         </p>
         <br />
         <p>
-          Trabajo en consultorio privado con adultos en un ambiente confidencial
-          y empático, generando confianza y respeto, ayudándolos con sus
-          problemas de pareja en algunos casos, en otros en los vínculos con los
-          hijos, ataques de pánico, ansiedad, duelos, problemas de índole
-          laboral y académicos, uso y abuso de drogas, alcohol, etc. Pedir
-          ayuda, es el primer paso para salir de un estado de insatisfacción,
-          dónde las causas son diversas. El enfoque terapéutico es
-          principalmente el Psicoanálisis, para encontrar las causas y llegar a
-          un diagnóstico, luego, dependiendo el caso, seguir con el
-          Psicoanálisis o dar un giro al Cognitivismo Conductual y/o a la
-          Terapia Sistémica. La duración del tratamiento también depende de cada
-          caso.
+          Trabajo en consultorio privado con adultos en un ambiente confidencial y empático, generando confianza y respeto, ayudándolos con sus problemas de pareja en algunos casos, en otros en los vínculos con los hijos, ataques de pánico, ansiedad, duelos, problemas de índole laboral y académicos, uso y abuso de drogas, alcohol, etc. Pedir ayuda, es el primer paso para salir de un estado de insatisfacción, dónde las causas son diversas. El enfoque terapéutico es principalmente el Psicoanálisis, para encontrar las causas y llegar a un diagnóstico, luego, dependiendo el caso, seguir con el Psicoanálisis o dar un giro al Cognitivismo Conductual y/o a la Terapia Sistémica. La duración del tratamiento también depende de cada caso.
         </p>
         <br />
       </div>
       <div className="ViewContainer" id="VistaTratamientos" ref={tratamientosRef}>
-        <TituloSeccion titulo="Tratamimentos" />
-        <p>
-          ALGUNAS DE LAS PROBLEMÁTICAS POR LAS QUE LAS PERSONAS COMIENZAN UN
-          TRATAMIENTO PSICOLÓGICO:
-        </p>
-        <ul>
-          <li>- Ansiedad​</li>
-          <li>- Angustia</li>
-          <li>- Estrés​</li>
-          <li>- Ataque de pánico​</li>
-          <li>- Depresión​</li>
-          <li>- Excesiva tristeza</li>
-          <li>- Problemas de relación​</li>
-          <li>- Dependencia emocional</li>
-          <li>- Inestabilidad emocional</li>
-          <li>- Dificultades en el área laboral</li>
-          <li>- Trastornos de la personalidad</li>
-          <li>- Problemas del sueño</li>
-          <li>- Impulsividad</li>
-          <li>- Celos</li>
-          <li>- Irritabilidad</li>
-          <li>- Inseguridad</li>
-          <li>- Timidez​</li>
-          <li>- Trastornos de la alimentación</li>
-          <li>- Duelo</li>
-          <li>- Obsesiones</li>
-          <li>- Desmotivación</li>
-          <li>- Miedos y Fobias</li>
-          <li>- Trastornos y disfunciones sexuales.</li>
-        </ul>
-        <p>
-          Existe otro motivo de consulta, que es el de personas, que no
-          sintiendo ningún síntoma, quieren hacer rendir sus capacidades al
-          máximo de sus posibilidades, y por tal razón concurren a un psicólogo
-          para ver porque no está sucediendo y así poder revertir la situación,
-          adquiriendo herramientas cognitivas que le permitan mejorar su calidad
-          de vida y la de su entorno, ya sea familiar, social o laboral.
-        </p>
+        <TratamientosContenidos />
       </div>
       <div className="ViewContainer" id="VistaContacto" ref={contactoRef}>
         <TituloSeccion titulo="Contacto" />
