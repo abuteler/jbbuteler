@@ -96,7 +96,9 @@ body {
         background: white;
         .ViewContainer {
           p {
-            width: 600px;
+            &:not(.TipoTratamiento p, .LeftCol p) {
+              width: 600px;
+            }
             font-size: 18px;
           }
           ul {
@@ -145,7 +147,7 @@ footer#EnneagonStudios {
 }
 
 // medium devices
-@media screen and (max-width: 768px) {
+@media (max-width: 768px) {
   body {
     .App {
       .JBB-Container {
@@ -185,7 +187,7 @@ footer#EnneagonStudios {
 }
 
 // small devices
-@media screen and (max-width: 520px) {
+@media (max-width: 520px) {
   body {
     .App {
       .JBB-Container {
