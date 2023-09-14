@@ -63,15 +63,17 @@
       padding-top: 35px;
       div.LeftCol {
         display: flex;
-        min-width: 400px;
+        min-width: 350px;
         max-width: 450px;
+        flex-grow: 1;
+        padding-right: 30px;
         flex-direction: column;
         justify-content: space-between;
-        height: 290px;
+        height: 270px;
         p {
           width: auto;
           font-size: 22px;
-          &:first-of-type { margin-top: 54px; }
+          &:first-of-type { margin-top: 24px; }
           margin: 0 0 0 auto;
           font-family: "ciclefina";
           text-align: center;
@@ -87,7 +89,8 @@
         }
         @media (max-width: 768px) {
           height: 220px;
-          min-width: 280px;
+          min-width: 300px;
+          padding-right: 0;
           p {
             margin: auto;
             &:first-of-type { margin-top: 10px; }
