@@ -10,7 +10,7 @@ import footer_logo from './assets/9S_footer.png';
 function App() {
   //Google Analytics
   ReactGA.initialize([{
-    trackingId: 'AW-1005728213',
+    trackingId: 'GTM-M7BRHHQJ',
     // gaOptions: { testMode: true }
   }]);
   const { pathname } = useLocation();
