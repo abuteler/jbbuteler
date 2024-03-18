@@ -95,7 +95,7 @@ body {
         margin: 300px auto 0;
         background: white;
         .ViewContainer {
-          p {
+          p, article {
             &:not(.TipoTratamiento p, .LeftCol p) {
               width: 600px;
             }
@@ -172,6 +172,13 @@ footer#EnneagonStudios {
           .ViewContainer {
             p {
               width: auto;
+            }
+            article {
+              width: auto !important;
+              padding: 0 24px;
+              p {
+                width: auto !important;
+              }
             }
             ul {
               width: 510px;
