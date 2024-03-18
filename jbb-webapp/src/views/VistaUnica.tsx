@@ -52,15 +52,23 @@ export default function VistaUnica() {
       <div className="ViewContainer" id="VistaSobreMi" ref={sobremiRef}>
         <TituloSeccion titulo="Sobre Mí" />
         <img src={bachi} alt="Retrato Licenciado Buteler" />
-        <p>
-          Licenciado en Psicología Juan Bautista Buteler
+        <article className="MultiParagraphContainer">
+          <p>
+            Licenciado en Psicología Juan Bautista Buteler
+            <br />
+            M.N. 47.500 M.P. 95.701
+          </p>
           <br />
-          M.N. 47.500 M.P. 95.701
-        </p>
-        <br />
-        <p>
-          Trabajo en consultorio privado con adultos en un ambiente confidencial y empático, generando confianza y respeto, ayudándolos con sus problemas de pareja en algunos casos, en otros en los vínculos con los hijos, ataques de pánico, ansiedad, duelos, problemas de índole laboral y académicos, uso y abuso de drogas, alcohol, etc. Pedir ayuda, es el primer paso para salir de un estado de insatisfacción, dónde las causas son diversas. El enfoque terapéutico es principalmente el Psicoanálisis, para encontrar las causas y llegar a un diagnóstico, luego, dependiendo el caso, seguir con el Psicoanálisis o dar un giro al Cognitivismo Conductual y/o a la Terapia Sistémica. La duración del tratamiento también depende de cada caso.
-        </p>
+          <p>
+            Trabajo con personas adultas en consultorio privado de manera presencial o por videollamada, en un ambiente confidencial y empático, generando confianza y respeto, ayudándolos con sus problemas de pareja en algunos casos, en otros en los vínculos con los hijos, ataques de pánico, ansiedad, duelos, problemas de índole laboral y académicos, uso y abuso de drogas, alcohol, etc.
+          </p>
+          <p>
+            Pedir ayuda, es el primer paso para salir de un estado de insatisfacción, dónde las causas son diversas.
+          </p>
+          <p>
+            Busco con los pacientes llegar a encontrar esas causas, arribar a un diagnóstico y trabajar con la palabra a partir de ello. La duración del tratamiento depende de cada caso.
+          </p>
+        </article>
         <br />
       </div>
       <div className="ViewContainer" id="VistaTratamientos" ref={tratamientosRef}>
