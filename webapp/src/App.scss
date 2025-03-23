@@ -147,6 +147,27 @@ footer#EnneagonStudios {
 }
 
 // medium devices
+@media (max-width: 1024px) {
+  body {
+    .App {
+      .JBB-Container {
+        #App-Views {
+          margin-top: 205px;
+          .ViewContainer {
+            &#VistaContacto {
+              p {
+                max-width: 350px;
+                width: 350px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+// medium devices
 @media (max-width: 768px) {
   body {
     .App {
@@ -186,6 +207,13 @@ footer#EnneagonStudios {
                 width: 250px;
               }
             }
+            &#VistaContacto {
+              p {
+                &:first-of-type {
+                  margin-right: -36px;
+                }
+              }
+            }
           }
         }
       }
@@ -220,6 +248,29 @@ footer#EnneagonStudios {
               img {
                 width: 322px;
               }
+            }
+            &#VistaContacto {
+              img {
+                width: 322px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+// smallest devices
+@media (max-width: 425px) {
+  body {
+    .App {
+      .JBB-Container {
+        #App-Views {
+          margin-top: 205px;
+          .ViewContainer {
+            .ColContainer {
+              min-width: 330px;
             }
           }
         }
