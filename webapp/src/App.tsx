@@ -1,22 +1,22 @@
 import { useEffect } from 'react';
 import { Routes, Route, useLocation, NavLink } from 'react-router-dom';
 import ReactGA from 'react-ga4';
-
 import VistaUnica from './views/VistaUnica'
 import './App.scss';
-
 import footer_logo from './assets/9S_footer.png';
 
+const TRACKING_ID = "AW-1005728213"; // your Measurement ID
+
 function App() {
-  //Google Analytics
   ReactGA.initialize([{
-    trackingId: 'GTM-M7BRHHQJ',
-    // gaOptions: { testMode: true }
+    trackingId: TRACKING_ID,
   }]);
+
   const { pathname } = useLocation();
 
   useEffect(()=>{
     ReactGA.send({ hitType: "pageview", page: pathname });
+    ReactGA.event({ category: "Navigation", action: "Page Change", label: pathname });
   }, [pathname])
 
   const links = [

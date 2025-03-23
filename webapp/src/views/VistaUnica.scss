@@ -48,7 +48,27 @@
         p {
           width: auto;
           font-size: 22px;
-          &:first-of-type { margin-top: 24px; }
+          &:first-of-type {
+            margin-top: 24px;
+            position: relative;
+            & > .btn-whapp {
+              width: 56px;
+              height: 56px;
+              position: absolute;
+              bottom: 5px;
+              right: -75px;
+              background-color: #25d366;
+              border-radius: 50%;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              background-image: url("../assets/whatsapp.png");
+              box-shadow: 1px 1px 1px #111;
+              background-repeat: no-repeat;
+              background-size: 56%;
+              background-position: center;
+            }
+          }
           margin: 0 0 0 auto;
           font-family: "ciclefina";
           text-align: center;
