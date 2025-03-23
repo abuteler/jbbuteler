@@ -1,5 +1,6 @@
 import { useEffect, useRef } from 'react';
 import { useLocation } from 'react-router-dom';
+import ReactGA from 'react-ga4';
 import TituloSeccion from '../components/TituloSeccion';
 import './VistaUnica.scss';
 
@@ -15,7 +16,8 @@ export default function VistaUnica() {
   const sobremiRef = useRef<HTMLDivElement>(null);
   const tratamientosRef = useRef<HTMLDivElement>(null);
   const contactoRef = useRef<HTMLDivElement>(null);
-  
+
+  const sendGASuccess = () => ReactGA.event({ category: "Whatsapp conversion", action: "Click", label: "Whatsapp" });
 
   useEffect(() => {
     const hash = pathname?.replace('/', '');
@@ -78,7 +80,14 @@ export default function VistaUnica() {
         <TituloSeccion titulo="Contacto" />
         <div className="ColContainer">
           <div className="LeftCol">
-            <p>Celular: +54 9 11 5003 7697</p>
+            <p>
+              Celular: +54 9 11 5003 7697
+              <a
+                className="btn-whapp"
+                href="https://api.whatsapp.com/send?phone=5491150037697"
+                target="new"
+                onClick={sendGASuccess}/>
+            </p>
             <p>
               E-Mail:{" "}
               <a href="mailto:jbbuteler@hotmail.com">jbbuteler@hotmail.com</a>
